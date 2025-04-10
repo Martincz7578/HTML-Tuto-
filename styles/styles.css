@@ -1,22 +1,23 @@
 body{
-    font-family: Arial, Helvetica, sans-serif;
     margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 header{
-    background-color: #247BA0;
     margin: 0;
+    padding: 25px;
+    background-color: #666547;
 }
 
 main{
     border: 2px;
-    background-color: #70C1B3;
-    margin: 0;
+    padding: 1cm;
+    background-color: #6fcb9f;
 }
 
 footer{
-    background-color: #247BA0;
     margin: 0;
+    background-color: #666547;
 }
 
 h1, h2, h3, h4, h5, h6, p{
@@ -24,19 +25,35 @@ h1, h2, h3, h4, h5, h6, p{
     padding: 5px;
 }
 
+h1{
+    text-align: center;
+    font-family: 'Coda Caption', sans-serif;
+    font-weight: 800;
+    font-size: calc(20vw / var(--word-total) );
+    line-height: 1.0;
+    letter-spacing: -0.03em;
+    transform: perspective(300px) scaleY(1.5) rotateX(-40deg);
+    transform-style: preserve-3d;
+    --layer-depth: 0.32em;
+    font-size: 75px;
+}
+
 button{
     padding: 5px;
     width: 120px;
     height: 60px;
+    margin: 5px;
     border: 1;
-    border-color: black;
-    background-color: #B2DBBF;
+    border-style: solid;
+    border-color: #666547;
+    background-color: #fb2e01;
     cursor: pointer;
     text-align: center;
+    font-family: 'Star Wars', sans-serif;
 }
 
 button:hover{
-    background-color: #247BA0;
+    background-color: #ffe28a;
     color: white;
     transform: translateY(-5px);
 }
@@ -58,3 +75,19 @@ button-container {
 .pad{
     padding: 5px;
 }
+
+/* use embeded code in index.html */
+.future {
+    font-family: "Audiowide", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.sw{
+    font-family: 'Star Wars', sans-serif;
+}
+
+/* imports */
+@import url('https://fonts.cdnfonts.com/css/star-wars');
+
+@import url('https://fonts.googleapis.com/css?family=Coda+Caption:800');
